@@ -136,7 +136,9 @@ section {
   background-image: url('../img/section-d.mp4');
 }
 .section-e {
-  background-image: url('../img/section-e.webp');
+  <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+  <source src='../img/section-d.mp4'>
+  </video>;
 }
 .section-f {
   background-image: url('../img/section-f.webp');
