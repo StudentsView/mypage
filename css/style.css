@@ -135,10 +135,49 @@ section {
 .section-d {
   background-image: url('../img/section-d.mp4');
 }
+/* Section E 기본 스타일 */
 .section-e {
-  <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-  <source src='../img/section-d.mp4'>
-  </video>;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;  /* 비디오가 영역 밖으로 넘치지 않도록 */
+  text-transform: uppercase;
+  /* 포스터 이미지용 백업 */
+  background: url('../img/section-d.jpg') center/cover no-repeat;
+}
+
+/* 배경 비디오 스타일 */
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;  /* 비디오를 꽉 채워서 크롭 */
+  z-index: -1;        /* 콘텐츠 뒤로 보내기 */
+}
+
+/* 콘텐츠(.section-inner)가 비디오 위에 보이도록 */
+.section-inner {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+  z-index: 1;
+}
+
+/* 스크롤 화살표도 위로 */
+.scroll-arrow {
+  position: relative;
+  z-index: 1;
+}
+
+/* 기존 애니메이션, 타이포그래피는 그대로 유지 */
+.section-inner h4 { /* … */ }
+.section-inner h2 { /* … */ }
+.section-inner a  { /* … */ }
 }
 .section-f {
   background-image: url('../img/section-f.webp');
