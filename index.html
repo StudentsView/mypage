@@ -139,37 +139,48 @@
     </section>
     
     <!-- Section E -->
-    <section>  
-      <div class="bg">
-        <video muted autoplay loop>
-          <source src="https://youtu.be/aSp9tzRBCIQ?si=OzraLLW2tHaUjGJL">
-        </video>
-      </div>
+<section class="section-e">
+  <!-- 배경 비디오 -->
+  <video
+    class="bg-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="img/section-d.jpg"  <!-- 비디오 로드 전 또는 지원 안 되는 브라우저용 포스터 -->
+  >
+    <source src="img/section-d.mp4" type="video/mp4" />
+    <!-- WebM 포맷 추가 지원이 필요하면 주석 해제 -->
+    <!-- <source src="img/section-d.webm" type="video/webm" /> -->
+    이 브라우저는 비디오 태그를 지원하지 않습니다.
+  </video>
+
+  <div class="section-inner">
+    <br />
+    <h4>1번째 연소실험</h4>
+    <h2>2025년 5월</h2>
+    <h4>로켓팀</h4>
+    <h4>Safari 및 WebKit 환경이 아닐 경우</h4>
+    <h4>정상적으로 표시되지 않을 수 있습니다.</h4>
+    <a href="dragon.html" class="btn">
+      <div class="hover"></div>
+      <span>커리큘럼</span>
+    </a>
+  </div>
+
+  <div class="scroll-arrow">
+    <svg width="30px" height="20px">
+      <path
+        stroke="#ffffff"
+        fill="none"
+        stroke-width="2px"
+        d="M2.000,5.000 L15.000,18.000 L28.000,5.000">
+	      
+      </path>
+    </svg>
+  </div>
+</section>
 	  
-      <div class="section-inner">
-        <br> <h4>1번째 연소실험</h4>
-        <h2>TEST</h2>
-        <h4>로켓팀</h4>
-        <h4>Safari 및 WebKit 환경이 아닐 경우</h4>
-        <h4>정상적으로 표시되지 않을 수 있습니다.</h4>
-        <a href="dragon.html" class="btn">
-          <div class="hover"></div>
-          <span>커리큘럼</span>
-        </a>
-      </div>
-
-      <div class="scroll-arrow">
-        <svg width="30px" height="20px">
-          <path
-            stroke="#ffffff"
-            fill="none"
-            stroke-width="2px"
-            d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
-          ></path>
-        </svg>
-      </div>
-    </section>
-
     <footer>
       <ul>
         <li>BOIN SE3C &copy; 2025</li>
