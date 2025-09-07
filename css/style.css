@@ -135,6 +135,9 @@ section {
 .section-d {
   background-image: url('../img/section-d.mp4');
 }
+.section-f {
+  background-image: url('../img/nuclearimg.png');
+}
 /* Section E 기본 스타일 */
 .section-e {
   position: relative;
